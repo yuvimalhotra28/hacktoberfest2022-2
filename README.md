@@ -1,4 +1,12 @@
-# hacktoberfest2021
+# Hacktoberfest2021
+
+Follow:
+[Dhananjay Porwal](https://github.com/DhananjayPorwal) |
+[Avinash Kumar](https://github.com/avi0901) |
+[Devansh Lodhi](https://github.com/Ghost1129) |
+[Apoorva Vairagi](https://github.com/codesAliecc)
+
+---
 
 1. Create a new file 
 ![sample1](https://raw.githubusercontent.com/DhananjayPorwal/hacktoberfest2021/main/example/Screenshot%20from%202021-10-03%2018-23-02.png)
