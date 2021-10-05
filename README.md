@@ -9,6 +9,8 @@ Follow US:
 
 Official Telegram Group: [Join Now](https://t.me/virtualmeetinghacktoberfest) 
 
+> Remember: **SHARING IS CARING** ✨
+
 ---
 ### How to create a pull request?
 
