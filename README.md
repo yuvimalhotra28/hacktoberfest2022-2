@@ -1,4 +1,4 @@
-# Hacktoberfest2021
+# Hacktoberfest2021 🎃
 
 Follow US:
 [Dhananjay Porwal](https://github.com/DhananjayPorwal) |
@@ -33,3 +33,9 @@ Official Telegram Group: [Join Now](https://t.me/virtualmeetinghacktoberfest)
 ![](https://raw.githubusercontent.com/DhananjayPorwal/hacktoberfest2021/main/example/Screenshot%20from%202021-10-03%2018-41-45.png)
 
 **Thanks**!
+
+---
+
+### Contributers 🏆
+
+![](https://contrib.rocks/image?repo=DhananjayPorwal/hacktoberfest2021)
