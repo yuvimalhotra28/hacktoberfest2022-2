@@ -12,6 +12,18 @@ Official Telegram Group: [Join Now](https://t.me/virtualmeetinghacktoberfest)
 > Remember: **SHARING IS CARING** ✨
 
 ---
+STEP 1:
+### Create a GitHub Account?
+It pretty simple.<br>
+Visit: https://github.com/
+
+---
+STEP 2:
+### Register to Hacktober Fest?
+Visit: https://hacktoberfest.digitalocean.com/
+
+---
+STEP 3:
 ### How to create a pull request?
 
 1. Create a new file 
