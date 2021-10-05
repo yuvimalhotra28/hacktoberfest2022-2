@@ -10,6 +10,7 @@ Follow US:
 Official Telegram Group: [Join Now](https://t.me/virtualmeetinghacktoberfest) 
 
 ---
+### How to create a pull request?
 
 1. Create a new file 
 ![sample1](https://raw.githubusercontent.com/DhananjayPorwal/hacktoberfest2021/main/example/Screenshot%20from%202021-10-03%2018-23-02.png)
