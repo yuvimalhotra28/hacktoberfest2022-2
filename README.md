@@ -1,10 +1,13 @@
 # Hacktoberfest2021
 
-Follow:
+Follow US:
 [Dhananjay Porwal](https://github.com/DhananjayPorwal) |
 [Avinash Kumar](https://github.com/avi0901) |
 [Devansh Lodhi](https://github.com/Ghost1129) |
 [Apoorva Vairagi](https://github.com/codesAliecc)
+---
+
+Official Telegram Group: [Join Now](https://t.me/virtualmeetinghacktoberfest) 
 
 ---
 
