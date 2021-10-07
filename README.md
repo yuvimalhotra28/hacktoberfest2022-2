@@ -61,6 +61,13 @@ STEP 3:
 6. Required, do a comment.
 ![](https://raw.githubusercontent.com/DhananjayPorwal/hacktoberfest2021/main/example/Screenshot%20from%202021-10-03%2018-41-45.png)
 
+```markdown
+✨ You have to repeat STEP 3, 3 more times in order to receive swags.
+```
+
+> Wanna more swags?? 😎 <br>
+> Visit [here](https://github.com/crweiner/hacktoberfest-swag-list)
+
 **Thanks**!
 
 ---
