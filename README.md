@@ -66,7 +66,7 @@ STEP 3:
 ```
 
 > Wanna more swags?? 😎 <br>
-> Visit [here](https://github.com/crweiner/hacktoberfest-swag-list)
+> Visit [here](https://hacktoberfestswaglist.com/)
 
 **Thanks**!
 
