@@ -1,0 +1,4 @@
+Operations on STACK
+push()
+pop()
+delete()
