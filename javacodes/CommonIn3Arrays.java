@@ -45,7 +45,7 @@ public class CommonIn3Arrays {
 		int arr1[]= {1,5,10,20,40,80};
 		int arr2[]= {6,7,20,80,100};
 		int arr3[]= {3,4,15,20,30,70,80,120};
-		
+		//To print common elements in 3 array
 		System.out.println("commom elements in 3 arrays are :" );
 		child.findCommon(arr1, arr2, arr3);
 	}
