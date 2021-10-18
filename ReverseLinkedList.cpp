@@ -1,79 +1,74 @@
-// Iterative C++ program to reverse
-// a linked list
 #include <iostream>
 using namespace std;
+class node
+{
+public:
+    int data;
+    node *next;
 
-/* Link list node */
-struct Node {
-	int data;
-	struct Node* next;
-	Node(int data)
-	{
-		this->data = data;
-		next = NULL;
-	}
+    node(int data)
+    {
+        this->data = data;
+        next = NULL;
+    }
 };
-
-struct LinkedList {
-	Node* head;
-	LinkedList() { head = NULL; }
-
-	/* Function to reverse the linked list */
-	void reverse()
-	{
-		// Initialize current, previous and
-		// next pointers
-		Node* current = head;
-		Node *prev = NULL, *next = NULL;
-
-		while (current != NULL) {
-			// Store next
-			next = current->next;
-
-			// Reverse current node's pointer
-			current->next = prev;
-
-			// Move pointers one position ahead.
-			prev = current;
-			current = next;
-		}
-		head = prev;
-	}
-
-	/* Function to print linked list */
-	void print()
-	{
-		struct Node* temp = head;
-		while (temp != NULL) {
-			cout << temp->data << " ";
-			temp = temp->next;
-		}
-	}
-
-	void push(int data)
-	{
-		Node* temp = new Node(data);
-		temp->next = head;
-		head = temp;
-	}
-};
-
-/* Driver code*/
+void print(node *head)
+{
+    node *temp = head;
+    while (temp)
+    {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+}
+node *takeInput()
+{
+    int data;
+    cin >> data;
+    node *head = NULL;
+    while (data != -1)
+    {
+        node *newnode = new node(data);
+        if (head == NULL)
+            head = newnode;
+        else
+        {
+            node *temp = head;
+            while (temp->next)
+            {
+                temp = temp->next;
+            }
+            temp->next = newnode;
+        }
+        cin >> data;
+    }
+    return head;
+}
+node *Reverse(node *head)
+{
+    //Base Condition
+    if (head == NULL || head->next == NULL)
+    {
+        return head;
+    }
+    //Recursion Call
+    node *smallAns = Reverse(head->next);
+    //Small Calculations
+    node *temp = smallAns;
+    while (temp->next)
+    {
+        temp = temp->next;
+    }
+    temp->next = head;
+    head->next = NULL;
+    return smallAns;
+}
 int main()
 {
-	/* Start with the empty list */
-	LinkedList ll;
-	ll.push(20);
-	ll.push(4);
-	ll.push(15);
-	ll.push(85);
-
-	cout << "Given linked list\n";
-	ll.print();
-
-	ll.reverse();
-
-	cout << "\nReversed Linked list \n";
-	ll.print();
-	return 0;
+    node *head, *tail;
+    head = takeInput();
+    print(head);
+    cout << endl;
+    tail = Reverse(head);
+    print(tail);
 }
