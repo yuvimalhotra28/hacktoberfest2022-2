@@ -1,59 +1,51 @@
-// C++ program to print DFS traversal from
-// a given vertex in a given graph
 #include <bits/stdc++.h>
 using namespace std;
 
-// Graph class represents a directed graph
-// using adjacency list representation
-class Graph
+vector< vector <int>> g;
+vector<bool> v;
+
+// Undirected graph
+void addEdge(int a, int b)
 {
-public:
-	map<int, bool> visited;
-	map<int, list<int>> adj;
-
-	// function to add an edge to graph
-	void addEdge(int v, int w);
-
-	// DFS traversal of the vertices
-	// reachable from v
-	void DFS(int v);
-};
-
-void Graph::addEdge(int v, int w)
-{
-	adj[v].push_back(w); // Add w to v’s list.
+	g[a].push_back(b);
+	//g[b].push_back(a);
 }
 
-void Graph::DFS(int v)
+void dfsVisit(int u)
 {
-	// Mark the current node as visited and
-	// print it
-	visited[v] = true;
-	cout << v << " ";
+	v[u] = true;
+	cout << u << " ";
 
-	// Recur for all the vertices adjacent
-	// to this vertex
-	list<int>::iterator i;
-	for (i = adj[v].begin(); i != adj[v].end(); ++i)
-		if (!visited[*i])
-			DFS(*i);
+	for(auto i = g[u].begin(); i != g[u].end(); i++)
+	{
+		if(!v[*i])
+			dfsVisit(*i);
+	}
 }
 
-// Driver code
+void dfs(int n)
+{
+	for(int u = 0; u < n; u++)
+	{
+		if(!v[u])
+			dfsVisit(u);
+	}
+}
+
 int main()
 {
-	// Create a graph given in the above diagram
-	Graph g;
-	g.addEdge(0, 1);
-	g.addEdge(0, 2);
-	g.addEdge(1, 2);
-	g.addEdge(2, 0);
-	g.addEdge(2, 3);
-	g.addEdge(3, 3);
+	int n, e;
+	cin >> n >> e;
 
-	cout << "Following is Depth First Traversal"
-			" (starting from vertex 2) \n";
-	g.DFS(2);
+	v.assign(n, false);
+	g.assign(n, vector<int>());
 
-	return 0;
+	int a, b;
+	for(int i = 0; i < e; i++)
+	{
+		cin >> a >> b;
+		addEdge(a, b);
+	}
+
+	dfs(n);
 }
