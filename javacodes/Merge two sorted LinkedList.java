@@ -1,4 +1,4 @@
-class mergeSortList{
+class mergeSortLinkedList{
   public static LinkedListNode merge_sorted(
       LinkedListNode head1,
       LinkedListNode head2) {
